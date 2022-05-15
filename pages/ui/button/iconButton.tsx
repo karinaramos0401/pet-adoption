@@ -2,7 +2,7 @@ import React, {FC} from "react";
 import {Icon} from "../button/iconButtonStyled"
 
 interface Icon {
-    children: any,
+    children: React.ReactNode,
 }
 
 export const IconButton: FC<Icon> = ({children}) => {
