@@ -1,11 +1,11 @@
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import React, { FC } from 'react';
-import {Button} from "../../ui/button/button"
-import {IconButton} from "../../ui/button/iconButton"
+import {Button} from "../../ui/button/button";
+import {IconButton} from "../../ui/button/iconButton";
+import { ImageCarousel } from '../Carousel/Carousel';
 import { Description, GridContainer, ImageWrapper } from './petDetailsStyled';
 
 interface PetDetails {
-    img: string,
     description: string,
 }
 
@@ -13,7 +13,9 @@ const PetDetails: FC<PetDetails> = () => {
   return (
     <>
       <GridContainer>
-          <ImageWrapper></ImageWrapper>
+          <ImageWrapper>
+            <ImageCarousel></ImageCarousel>
+          </ImageWrapper>
           <Description>
               <Button fontWeight={"bold"}>Adotar</Button>
               <IconButton>
